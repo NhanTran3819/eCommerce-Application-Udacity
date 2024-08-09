@@ -35,14 +35,14 @@ public class UserController {
 
 	@GetMapping("/id/{id}")
 	public ResponseEntity<User> findById(@PathVariable Long id) {
-		log.info("Find User with id: ", id);
+		log.info("Find User with id: " + id);
 		return ResponseEntity.of(userRepository.findById(id));
 	}
 	
 	@GetMapping("/{username}")
 	public ResponseEntity<User> findByUserName(@PathVariable String username) {
 		User user = userRepository.findByUsername(username);
-		log.info("Find User with username: ", username);
+		log.info("Find User with username: " + username);
 		return user == null ? ResponseEntity.notFound().build() : ResponseEntity.ok(user);
 	}
 	
@@ -56,12 +56,12 @@ public class UserController {
 		user.setPassword(bCryptPasswordEncoder.encode(createUserRequest.getPassword()));
 		if (createUserRequest.getPassword().length() < 8) {
 			log.error("Create user fail with user name: " + createUserRequest.getUsername()
-					+ "Reason: The password less than 8 characters");
+					+ " - Reason: The password less than 8 characters");
 			return ResponseEntity.badRequest().build();
 		}
 		if (!createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword())) {
 			log.error("Create user fail with user name: " + createUserRequest.getUsername()
-					+ "Reason: The password and the confirmPassword is not match.");
+					+ " - Reason: The password and the confirmPassword is not match.");
 			return ResponseEntity.badRequest().build();
 		}
 		userRepository.save(user);

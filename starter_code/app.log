@@ -1,0 +1,29 @@
+2024-08-08 23:35:05.560  INFO 2740 --- [main] c.e.d.SareetaApplicationTests            : Starting SareetaApplicationTests on Admin with PID 2740 (started by Admin in D:\Spring boot\Project4\eCommerce-Application-Udacity\starter_code)
+2024-08-08 23:35:05.562  INFO 2740 --- [main] c.e.d.SareetaApplicationTests            : No active profile set, falling back to default profiles: default
+2024-08-08 23:35:10.392  INFO 2740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-08-08 23:35:10.853  INFO 2740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 393ms. Found 4 repository interfaces.
+2024-08-08 23:35:15.025  INFO 2740 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7f1b29a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-08-08 23:35:16.754  INFO 2740 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2024-08-08 23:35:24.978  INFO 2740 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2024-08-08 23:35:25.478  INFO 2740 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2024-08-08 23:35:26.108  INFO 2740 --- [main] o.h.Version                              : HHH000412: Hibernate Core {5.3.10.Final}
+2024-08-08 23:35:26.113  INFO 2740 --- [main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2024-08-08 23:35:26.339  INFO 2740 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-08-08 23:35:27.758  INFO 2740 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-08-08 23:35:32.681  INFO 2740 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 23:35:39.203  WARN 2740 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-08 23:35:40.139  INFO 2740 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6464f017, org.springframework.security.web.context.SecurityContextPersistenceFilter@6406b84d, org.springframework.security.web.header.HeaderWriterFilter@3e4ead73, org.springframework.web.filter.CorsFilter@755a90a6, org.springframework.security.web.authentication.logout.LogoutFilter@39a09c0, com.example.demo.security.JWTAuthenticationFilter@5862ab28, com.example.demo.security.JWTAuthenticationVerficationFilter@21202507, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e643402, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8ad182c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62878d7c, org.springframework.security.web.session.SessionManagementFilter@15a5cc6e, org.springframework.security.web.access.ExceptionTranslationFilter@1d45c4b7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@9c40f43]
+2024-08-08 23:35:43.254  INFO 2740 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2024-08-08 23:35:45.429  INFO 2740 --- [main] c.e.d.SareetaApplicationTests            : Started SareetaApplicationTests in 50.135 seconds (JVM running for 80.179)
+2024-08-08 23:35:45.695  INFO 2740 --- [main] c.e.d.c.UserController                   : Find User with id: 
+2024-08-08 23:35:45.701  INFO 2740 --- [main] c.e.d.c.UserController                   : Create user success for user: testUser
+2024-08-08 23:35:45.703 ERROR 2740 --- [main] c.e.d.c.UserController                   : Create user fail with user name: testUserReason: The password less than 8 characters
+2024-08-08 23:35:45.705 ERROR 2740 --- [main] c.e.d.c.UserController                   : Create user fail with user name: testUserReason: The password and the confirmPassword is not match.
+2024-08-08 23:35:45.709  INFO 2740 --- [main] c.e.d.c.UserController                   : Find User with username: 
+2024-08-08 23:35:45.710  INFO 2740 --- [main] c.e.d.c.UserController                   : Find User with username: 
+2024-08-08 23:35:45.959  INFO 2740 --- [Thread-2] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-08-08 23:35:45.984  INFO 2740 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-08 23:35:46.043  INFO 2740 --- [Thread-2] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2024-08-08 23:35:46.133  INFO 2740 --- [Thread-2] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.

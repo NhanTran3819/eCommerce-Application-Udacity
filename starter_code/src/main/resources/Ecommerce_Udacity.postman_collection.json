@@ -1,0 +1,501 @@
+{
+	"info": {
+		"_postman_id": "6a2bd3b6-8701-4144-9642-81df9afed0c9",
+		"name": "Ecommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7155676"
+	},
+	"item": [
+		{
+			"name": "User Create",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Underdog\",\n    \"password\": \"Ax3*dkfnei\",\n    \"confirmPassword\": \"Ax3*dkfnei\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/user/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Create Failure - password less than 8 characters",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Superdog\",\n    \"password\": \"Ax3*dkfnei\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/user/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Create Failure - Not match password",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Superdog\",\n    \"password\": \"Ax3*dkfnei\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/user/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Underdog\",\n    \"password\": \"Ax3*dkfnei\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User Failure",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"Underdog\", \"password\": \"OOps!!\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find User by Name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVbmRlcmRvZyIsImV4cCI6MTYxMzQ5OTYxMH0.1TghS0y8aYyoSY3f9ts6yr1GSzTgeLoChTD-jqSaBbr3EN5pUoPSSmwyHihMT4DQwq1sHITpVGYE0xpzehDA2w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/user/Underdog",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"user",
+						"Underdog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find User Unauthorized",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVbmRlcmRvZyIsImV4cCI6MTYxMjczMzkxN30.zVc8BSJCFxdVzt7xLqhmIUF7g7UjGZOAmYszUAHLIKU8_QleUfpLlbTEl8e087cwuUfVDay5efxLOp65fACf0Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/user/Underdog",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"user",
+						"Underdog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add to Cart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVbmRlcmRvZyIsImV4cCI6MTYxMzQ5OTYxMH0.1TghS0y8aYyoSY3f9ts6yr1GSzTgeLoChTD-jqSaBbr3EN5pUoPSSmwyHihMT4DQwq1sHITpVGYE0xpzehDA2w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"Underdog\",\n    \"itemId\": 1,\n    \"quantity\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/cart/addToCart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"cart",
+						"addToCart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Submit Order Success",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVbmRlcmRvZyIsImV4cCI6MTYxMzQ5OTYxMH0.1TghS0y8aYyoSY3f9ts6yr1GSzTgeLoChTD-jqSaBbr3EN5pUoPSSmwyHihMT4DQwq1sHITpVGYE0xpzehDA2w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/order/submit/Underdog",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"order",
+						"submit",
+						"Underdog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Submit Order Failure",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVbmRlcmRvZyIsImV4cCI6MTYxMzQ5OTYxMH0.1TghS0y8aYyoSY3f9ts6yr1GSzTgeLoChTD-jqSaBbr3EN5pUoPSSmwyHihMT4DQwq1sHITpVGYE0xpzehDA2w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/order/submit/Underdog",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"order",
+						"submit",
+						"Underdog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order History",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVbmRlcmRvZyIsImV4cCI6MTYxMzQ5OTYxMH0.1TghS0y8aYyoSY3f9ts6yr1GSzTgeLoChTD-jqSaBbr3EN5pUoPSSmwyHihMT4DQwq1sHITpVGYE0xpzehDA2w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/order/history/Underdog",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"order",
+						"history",
+						"Underdog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Available Items",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVbmRlcmRvZyIsImV4cCI6MTYxMzQ5OTYxMH0.1TghS0y8aYyoSY3f9ts6yr1GSzTgeLoChTD-jqSaBbr3EN5pUoPSSmwyHihMT4DQwq1sHITpVGYE0xpzehDA2w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Item By Name",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVbmRlcmRvZyIsImV4cCI6MTYxMzQ5OTYxMH0.1TghS0y8aYyoSY3f9ts6yr1GSzTgeLoChTD-jqSaBbr3EN5pUoPSSmwyHihMT4DQwq1sHITpVGYE0xpzehDA2w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/api/item/name?name=Square Widget",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"item",
+						"name"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Square Widget"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
