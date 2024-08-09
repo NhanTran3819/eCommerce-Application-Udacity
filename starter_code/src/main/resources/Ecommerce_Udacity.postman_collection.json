@@ -24,15 +24,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"username\": \"Underdog\",\n    \"password\": \"Ax3*dkfnei\",\n    \"confirmPassword\": \"Ax3*dkfnei\"\n}"
+					"raw": "{\n    \"username\": \"thanhnhan\",\n    \"password\": \"nhan1991\",\n    \"confirmPassword\": \"nhan1991\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8081/api/user/create",
+					"raw": "http://localhost:8082/api/user/create",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8082",
 					"path": [
 						"api",
 						"user",
@@ -60,15 +60,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"username\": \"Superdog\",\n    \"password\": \"Ax3*dkfnei\"\n}"
+					"raw": "{\n    \"username\": \"thanhnhan19\",\n    \"password\": \"nhan12\",\n    \"confirmPassword\": \"nhan12\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8081/api/user/create",
+					"raw": "http://localhost:8082/api/user/create",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8082",
 					"path": [
 						"api",
 						"user",
@@ -96,15 +96,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"username\": \"Superdog\",\n    \"password\": \"Ax3*dkfnei\"\n}"
+					"raw": "{\n    \"username\": \"thanhnhan1991\",\n    \"password\": \"nhan12345\",\n    \"confirmPassword\": \"nhan123456\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8081/api/user/create",
+					"raw": "http://localhost:8082/api/user/create",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8082",
 					"path": [
 						"api",
 						"user",
@@ -132,15 +132,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"username\": \"Underdog\",\n    \"password\": \"Ax3*dkfnei\"\n}"
+					"raw": "{\n    \"username\": \"thanhnhan\",\n    \"password\": \"nhan1991\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8081/login",
+					"raw": "http://localhost:8082/login",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8082",
 					"path": [
 						"login"
 					]
@@ -166,15 +166,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"username\": \"Underdog\", \"password\": \"OOps!!\"}"
+					"raw": "{\r\n    \"username\": \"thanhnhan\",\r\n    \"password\": \"OOps!!\"\r\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8081/login",
+					"raw": "http://localhost:8082/login",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8082",
 					"path": [
 						"login"
 					]
@@ -197,7 +197,7 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVbmRlcmRvZyIsImV4cCI6MTYxMzQ5OTYxMH0.1TghS0y8aYyoSY3f9ts6yr1GSzTgeLoChTD-jqSaBbr3EN5pUoPSSmwyHihMT4DQwq1sHITpVGYE0xpzehDA2w",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aGFuaG5oYW4iLCJleHAiOjE3MjQwMzcxMTh9.wIchipiQxKyKozdEa4VgwG8AqAMq3oG5aS1ySRBJ784ecMQUDwIN2DHbB07oC8roBtXLkwqnvBJlSeH0PTFYBA",
 						"type": "text"
 					}
 				],
@@ -206,16 +206,16 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8081/api/user/Underdog",
+					"raw": "http://localhost:8082/api/user/thanhnhan",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8082",
 					"path": [
 						"api",
 						"user",
-						"Underdog"
+						"thanhnhan"
 					]
 				}
 			},
@@ -236,7 +236,7 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVbmRlcmRvZyIsImV4cCI6MTYxMjczMzkxN30.zVc8BSJCFxdVzt7xLqhmIUF7g7UjGZOAmYszUAHLIKU8_QleUfpLlbTEl8e087cwuUfVDay5efxLOp65fACf0Q",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aGFuaG5oYW4iLCJleHAiOjE3MjQwMDc4NjV9.1rkRznrxAX6oo6T-7y7IlUE4tSOGhgBBSy1gb7qYs9n_293OW6UvqpbHYsa_onCyftpNXysieR9x4KzJj3S6gQ",
 						"type": "text"
 					}
 				],
@@ -245,16 +245,16 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8081/api/user/Underdog",
+					"raw": "http://localhost:8082/api/user/thanhnhan1911",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8082",
 					"path": [
 						"api",
 						"user",
-						"Underdog"
+						"thanhnhan1911"
 					]
 				}
 			},
@@ -272,21 +272,21 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVbmRlcmRvZyIsImV4cCI6MTYxMzQ5OTYxMH0.1TghS0y8aYyoSY3f9ts6yr1GSzTgeLoChTD-jqSaBbr3EN5pUoPSSmwyHihMT4DQwq1sHITpVGYE0xpzehDA2w",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aGFuaG5oYW4iLCJleHAiOjE3MjQwMzcxMTh9.wIchipiQxKyKozdEa4VgwG8AqAMq3oG5aS1ySRBJ784ecMQUDwIN2DHbB07oC8roBtXLkwqnvBJlSeH0PTFYBA",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"username\" : \"Underdog\",\n    \"itemId\": 1,\n    \"quantity\": 1\n}"
+					"raw": "{\n    \"username\" : \"thanhnhan\",\n    \"itemId\": 1,\n    \"quantity\": 1\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8081/api/cart/addToCart",
+					"raw": "http://localhost:8082/api/cart/addToCart",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8082",
 					"path": [
 						"api",
 						"cart",
@@ -313,7 +313,7 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVbmRlcmRvZyIsImV4cCI6MTYxMzQ5OTYxMH0.1TghS0y8aYyoSY3f9ts6yr1GSzTgeLoChTD-jqSaBbr3EN5pUoPSSmwyHihMT4DQwq1sHITpVGYE0xpzehDA2w",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aGFuaG5oYW4iLCJleHAiOjE3MjQwMzcxMTh9.wIchipiQxKyKozdEa4VgwG8AqAMq3oG5aS1ySRBJ784ecMQUDwIN2DHbB07oC8roBtXLkwqnvBJlSeH0PTFYBA",
 						"type": "text"
 					}
 				],
@@ -322,17 +322,17 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8081/api/order/submit/Underdog",
+					"raw": "http://localhost:8082/api/order/submit/thanhnhan",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8082",
 					"path": [
 						"api",
 						"order",
 						"submit",
-						"Underdog"
+						"thanhnhan"
 					]
 				}
 			},
@@ -355,7 +355,7 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVbmRlcmRvZyIsImV4cCI6MTYxMzQ5OTYxMH0.1TghS0y8aYyoSY3f9ts6yr1GSzTgeLoChTD-jqSaBbr3EN5pUoPSSmwyHihMT4DQwq1sHITpVGYE0xpzehDA2w",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aGFuaG5oYW4iLCJleHAiOjE3MjQwMzcxMTh9.wIchipiQxKyKozdEa4VgwG8AqAMq3oG5aS1ySRBJ784ecMQUDwIN2DHbB07oC8roBtXLkwqnvBJlSeH0PTFYBA",
 						"type": "text"
 					}
 				],
@@ -364,17 +364,17 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8081/api/order/submit/Underdog",
+					"raw": "http://localhost:8082/api/order/submit/thanhnhan19",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8082",
 					"path": [
 						"api",
 						"order",
 						"submit",
-						"Underdog"
+						"thanhnhan19"
 					]
 				}
 			},
@@ -398,7 +398,7 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVbmRlcmRvZyIsImV4cCI6MTYxMzQ5OTYxMH0.1TghS0y8aYyoSY3f9ts6yr1GSzTgeLoChTD-jqSaBbr3EN5pUoPSSmwyHihMT4DQwq1sHITpVGYE0xpzehDA2w",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aGFuaG5oYW4iLCJleHAiOjE3MjQwMzcxMTh9.wIchipiQxKyKozdEa4VgwG8AqAMq3oG5aS1ySRBJ784ecMQUDwIN2DHbB07oC8roBtXLkwqnvBJlSeH0PTFYBA",
 						"type": "text"
 					}
 				],
@@ -407,17 +407,17 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8081/api/order/history/Underdog",
+					"raw": "http://localhost:8082/api/order/history/thanhnhan",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8082",
 					"path": [
 						"api",
 						"order",
 						"history",
-						"Underdog"
+						"thanhnhan"
 					]
 				}
 			},
@@ -441,7 +441,7 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVbmRlcmRvZyIsImV4cCI6MTYxMzQ5OTYxMH0.1TghS0y8aYyoSY3f9ts6yr1GSzTgeLoChTD-jqSaBbr3EN5pUoPSSmwyHihMT4DQwq1sHITpVGYE0xpzehDA2w",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aGFuaG5oYW4iLCJleHAiOjE3MjQwMzcxMTh9.wIchipiQxKyKozdEa4VgwG8AqAMq3oG5aS1ySRBJ784ecMQUDwIN2DHbB07oC8roBtXLkwqnvBJlSeH0PTFYBA",
 						"type": "text"
 					}
 				],
@@ -450,12 +450,12 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8081/api/item",
+					"raw": "http://localhost:8082/api/item",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8082",
 					"path": [
 						"api",
 						"item"
@@ -471,27 +471,27 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVbmRlcmRvZyIsImV4cCI6MTYxMzQ5OTYxMH0.1TghS0y8aYyoSY3f9ts6yr1GSzTgeLoChTD-jqSaBbr3EN5pUoPSSmwyHihMT4DQwq1sHITpVGYE0xpzehDA2w",
+						"value": "Bearer ",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8081/api/item/name?name=Square Widget",
+					"raw": "http://localhost:8082/api/item/name/Square Widget",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8082",
 					"path": [
 						"api",
 						"item",
-						"name"
-					],
-					"query": [
-						{
-							"key": "name",
-							"value": "Square Widget"
-						}
+						"name",
+						"Square Widget"
 					]
 				}
 			},
